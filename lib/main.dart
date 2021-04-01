@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:aluth_class/services/routeGenerator.dart';
-import 'package:aluth_class/ui/register/register.dart';
+import 'package:aluth_class/ui/register/login.dart';
 import 'package:aluth_class/ui/student/tutor_profile.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Tutor(),
+      home: Login(),
       onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
