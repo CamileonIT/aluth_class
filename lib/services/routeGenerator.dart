@@ -1,3 +1,4 @@
+import 'package:aluth_class/ui/register/login.dart';
 import 'package:aluth_class/ui/student/exam.dart';
 import 'package:aluth_class/ui/student/home.dart';
 import 'package:aluth_class/ui/student/subjects.dart';
@@ -13,6 +14,10 @@ class RouteGenerator {
     switch (settings.name) {
       case '/home':
         return MaterialPageRoute(builder: (_) => Home());
+      case '/login':
+        return MaterialPageRoute(
+          builder: (_) => Login(),
+        );
       case '/exam':
         return MaterialPageRoute(
           builder: (_) => Exam(),
