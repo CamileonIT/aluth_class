@@ -43,7 +43,7 @@ $check = mysqli_fetch_array(mysqli_query($conn,$Checkusername));
 	mysqli_query($conn,$Sql_Query)? null : $all_query_ok=false;
 
     $last_id = mysqli_insert_id($conn);
-	echo($last_id);  
+	
     $Sql_Query = "insert into tbl_login (user_id,user_name,password) values ('$last_id','$user_name','$password')";
     mysqli_query($conn,$Sql_Query)? null : $all_query_ok=false;
 
